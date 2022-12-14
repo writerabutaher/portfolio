@@ -17,7 +17,7 @@ function Skills() {
         },
         {
             skill: 'Tailwind',
-            img: 'https://img.icons8.com/ios/512/sass.png'
+            img: 'https://cdn3.iconfinder.com/data/icons/teenyicons-outline-vol-3/15/tailwind-256.png'
         },
         {
             skill: 'JavaScript',
@@ -44,13 +44,13 @@ function Skills() {
                     <h2 className="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">My Skills</h2>
                 </div>
 
-                <div className="grid sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-12 xl:gap-16">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-12 xl:gap-16">
                     {
                         skills.map((e, i) => {
                             const { img, skill } = e;
                             return (
                                 <div key={i} className="flex flex-col items-center">
-                                    <div className="w-20 flex justify-center items-center bg-pink-500 text-white rounded-lg md:rounded-xl shadow-lg mb-6 p-4">
+                                    <div className="w-20 flex justify-center items-center bg-pink-400 text-white rounded-lg md:rounded-xl shadow-lg mb-6 p-4">
                                         <img className='' src={img} alt="" />
                                     </div>
                                     <h3 className="text-lg md:text-xl font-semibold text-center mb-2">{skill}</h3>
